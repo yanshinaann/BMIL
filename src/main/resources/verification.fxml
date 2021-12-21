@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="319.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.VerificationController">
+    <children>
+        <Button fx:id="verify" layoutX="129.0" layoutY="242.0" mnemonicParsing="false" onAction="#verification" prefHeight="27.0" prefWidth="145.0" text="Верификация" />
+<!--        <Label layoutX="54.0" layoutY="98.0" prefHeight="18.0" prefWidth="62.0" text="Пароль" />-->
+<!--      <PasswordField fx:id="password" layoutX="117.0" layoutY="94.0" prefHeight="28.0" prefWidth="251.0" />-->
+      <TextField fx:id="id" layoutX="117.0" layoutY="56.0" prefHeight="28.0" prefWidth="251.0" />
+      <Label layoutX="54.0" layoutY="60.0" prefHeight="18.0" prefWidth="53.0" text="ID" />
+      <Label fx:id="result" layoutX="141.0" layoutY="160.0" prefHeight="43.0" prefWidth="155.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+    </children>
+</AnchorPane>

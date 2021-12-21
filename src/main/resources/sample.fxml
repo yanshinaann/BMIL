@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1515.0" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="pswField" layoutX="163.0" layoutY="90.0" onKeyPressed="#onKeyPressed" onKeyReleased="#onKeyReleased" prefHeight="25.0" prefWidth="294.0" />
+      <BarChart fx:id="barChart" animated="false" layoutX="150.0" layoutY="175.0">
+        <xAxis>
+          <CategoryAxis animated="false" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis animated="false" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="clearBtn" layoutX="498.0" layoutY="90.0" mnemonicParsing="false" onMousePressed="#onMousePressedClearBtn" prefHeight="25.0" prefWidth="92.0" text="Очистить" />
+      <LineChart fx:id="lineChart" animated="false" layoutX="663.0" layoutY="175.0">
+        <xAxis>
+          <CategoryAxis animated="false" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis animated="false" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="680.0" layoutY="58.0" prefHeight="40.0" prefWidth="134.0" text="Мат. ожидание">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="expectation" layoutX="801.0" layoutY="58.0" prefHeight="40.0" prefWidth="100.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="680.0" layoutY="107.0" prefHeight="40.0" prefWidth="134.0" text="Дисперсия">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="dispersion" layoutX="809.0" layoutY="111.0" prefHeight="40.0" prefWidth="100.0" />
+      <ProgressBar fx:id="complexityProgressBar" layoutX="163.0" layoutY="135.0" prefHeight="18.0" prefWidth="294.0" progress="0.0" />
+      <Label fx:id="overlay" layoutX="1184.0" layoutY="102.0" prefHeight="59.0" prefWidth="72.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="holdTime" layoutX="1184.0" layoutY="58.0" prefHeight="40.0" prefWidth="72.0" />
+      <Label layoutX="1022.0" layoutY="58.0" prefHeight="40.0" prefWidth="141.0" text="Время удержания">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1022.0" layoutY="110.0" prefHeight="34.0" prefWidth="141.0" text="Наложения">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="vectorParamBtn" layoutX="61.0" layoutY="585.0" mnemonicParsing="false" onAction="#showVector" prefHeight="34.0" prefWidth="155.0" text="Вектор параметров" />
+      <Label fx:id="vectorParamLabel" layoutX="231.0" layoutY="585.0" prefHeight="25.0" prefWidth="863.0" />
+      <Button layoutX="61.0" layoutY="638.0" mnemonicParsing="false" onAction="#saveUser" prefHeight="34.0" prefWidth="155.0" text="Сохранить в бд" />
+      <Button fx:id="identBtn" layoutX="61.0" layoutY="692.0" mnemonicParsing="false" onAction="#identification" prefHeight="34.0" prefWidth="155.0" text="Идентификация" />
+      <Label fx:id="identUserName" layoutX="244.0" layoutY="692.0" prefHeight="34.0" prefWidth="491.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="verification" layoutX="61.0" layoutY="739.0" mnemonicParsing="false" onAction="#verification" prefHeight="34.0" prefWidth="155.0" text="Верификация" />
+   </children>
+</Pane>
